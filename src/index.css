@@ -1,0 +1,184 @@
+ /* Estos son los estilos generales */
+
+ .App {
+  text-align: center; /* Centra el contenido dentro del componente App */
+}
+
+body {
+  background: #000; /* Fondo blanco para el cuerpo de la página */
+}
+
+#root {
+  background: #000; /* Fondo negro para el elemento raíz de la aplicacion React */
+  text-align: center;
+  color: #fff;
+  width: 100%; 
+}
+
+header { /* cabecera */
+  display: block;
+  justify-content: center; /* Distribuye los elementos horizontalmente con espacio entre ellos */
+  align-items: center; /* Alinea los elementos verticalmente al centro */
+  padding: 20px;
+  width: 100%;
+  max-width: 100%;
+  background: #000;
+  float:left;
+  color: #fff;
+  border-bottom: 1px solid #fff; /* Agrega un borde inferior sólido */
+  margin-bottom: 30px;
+  padding-right: 30px;
+}
+
+nav ul {
+  list-style: none; /* Elimina los puntos de la lista */
+  float: right;
+  display: flex;
+  padding-right:80px;
+  padding: 10px;
+   border-radius: 12px;
+   width: 50%;
+  max-width: 50%;
+}
+
+nav ul:hover {
+    color: purple;
+}
+
+nav ul li {
+    font-weight; bold;
+    color: lime;
+    margin-left: 30px;
+}
+
+nav ul li:hover {
+    color: red;
+}
+
+nav li {
+  margin-left: 1px; /* Espacio entre los elementos de la lista */
+}
+
+nav {
+  width: 75%;
+  float: right;
+} 
+
+main {
+ margin: 0 auto 0 auto;   
+ margin-left:15px;
+ width: 100%;
+}
+
+main img {
+  max-width: 50%;
+  width: 50%;
+  float: center;
+}
+
+header img {
+  max-width: 320px;
+  width: 25%;
+  float: left;
+}
+
+img {
+  margin: 0 auto; /* Centra las imágenes horizontalmente */
+  border-radius: 12px;
+}
+
+footer {
+  width: 100%;
+  padding: 10px 0; /* Simplifica el padding */
+  background: lime;
+  color: #000;
+  margin-top: 30px;
+  align-element: center;
+}
+
+footer img {
+    width: 32px;
+    height: auto;
+}
+
+.linea_1, .linea_2, .linea_3 {
+    display: none;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 1024px) {
+  nav ul {
+    flex-direction: column; /* Cambia la dirección de la lista a vertical */
+    width: 50px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    height: 50px;
+    background: lime;
+    color:lime;
+    border-radius: 6px;
+    display: block; /* Asegura que el menú se muestre como bloque */
+    overflow: hidden; /* Oculta el contenido que se desborde */
+    transition: width 0.3s ease; /* Agrega una transición suave al ancho */
+  }
+
+  nav ul:hover {
+    width: 250px; /* Expande el menú al pasar el mouse */
+    height: auto; /* Permite que el men se ajuste a su contenido */
+  }
+  
+  header {
+    max-height: 120px;
+  }
+
+  header img {
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  .menu_responsivo nav{
+      background: lime;
+      width: 200px;
+  }
+  
+  .linea_1 {
+      width: 75%;
+      display: block;
+      position: absolute;
+      height:10px;
+      border-bottom: red solid 1px;
+      margin-bottom: 10px;
+  }
+  
+    .linea_2 {
+      width: 75%;
+      display: block;
+      position: absolute;
+      height:10px;
+      top: 25px;
+      border-bottom: red solid 1px;
+      margin-bottom: 10px;
+  }
+  
+   .linea_3 {
+      width: 75%;
+      display: block;
+      position: absolute;
+      height:10px;
+      top: 40px;
+      border-bottom: red solid 1px;
+      margin-bottom: 10px;
+  }
+  
+  ul:hover > .linea_1,
+   ul:hover > .linea_2,
+    ul:hover > .linea_3 {
+      display: none;
+  }
+  
+   ul:hover > li {
+     color: red;
+  }
+  
+  
+}
